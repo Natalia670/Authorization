@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset = "UTF-8"/>
+        <title>Gestion de usuarios</title>
+    </header>
+    <h1>Gestión de usuarios</h1>
+    <body>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+
+            </tr>
+            {{#each users}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{email}}</td>
+            </tr>  
+            {{/each}}
+        </table>
+    </body>
+</html>
